@@ -46,7 +46,6 @@ To use SCFA in your project, follow these steps:
    Plotter_=Plotter(data,re,sp)
    Plotter_.each_group_location()
 
-
 ## Examples
 
 Check out the provided Jupyter notebooks to see SCFA in action:
