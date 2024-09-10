@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Examples
 
-```markdown
+
 Check out the provided Jupyter notebooks to see SCFA in action:
 
 - `simulation.ipynb`: Shows how SCFA can be used on simulated data.
