@@ -1,0 +1,2 @@
+factor-analyzer==0.4.1
+graphviz==0.20.3

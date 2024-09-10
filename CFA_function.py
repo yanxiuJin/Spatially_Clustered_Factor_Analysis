@@ -3,7 +3,6 @@
 ###------------------------------------------------------------###
 
 import numpy as np
-from multiprocessing import Pool
 import warnings
 import copy
 from collections import deque

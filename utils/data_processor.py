@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-import networkx as nx
 from pathlib import Path
 import os
 
