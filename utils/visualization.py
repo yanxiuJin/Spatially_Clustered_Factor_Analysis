@@ -39,7 +39,7 @@ class Plotter:
         plt.tight_layout() 
         plt.show()
         
-    def each_group_location(self,title,save_fig=False):
+    def each_group_location(self,title='',save_fig=False):
         group_size = max(self.result.groups_indexs)+1
         width_per_subplot = 4  
         height = 4  
