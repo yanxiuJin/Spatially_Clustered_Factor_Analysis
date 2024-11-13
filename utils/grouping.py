@@ -56,9 +56,12 @@ class GroupingProcessor:
         else:
             kmeans = KMeans(n_clusters=self.n,init='k-means++',n_init=10)
         kmeans.fit( self.sp[:,-2:])
-
+        sorted_centers = np.argsort(kmeans.cluster_centers_.sum(axis=1))
+        new_labels = np.zeros_like(kmeans.labels_)
+        for i, c in enumerate(sorted_centers):
+            new_labels[kmeans.labels_ == c] = i
         # Retrieve cluster labels
-        clusters = kmeans.labels_
+        clusters = new_labels
 
         # Create a list of lists for indices in each cluster
         groups_dict = {key:[] for key in range(self.n)}

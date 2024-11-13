@@ -12,7 +12,7 @@ class Plotter:
         fig, ax = plt.subplots(figsize=(10, 6))
         colors = ['blue', 'green', 'red', 'purple', 'orange', 'brown', 'pink', 'olive', 'cyan', 'magenta']  
         for key, value in self.result.g_count.items():
-            ax.plot(value, label=f'Group {key}',color=colors[key % len(colors)])      
+            ax.plot(value, label=f'Group {key+1}',color=colors[key % len(colors)])      
         ax.set_title(title)
         ax.set_xlabel('Iteration')
         ax.set_ylabel('Group sample size')
@@ -60,7 +60,7 @@ class Plotter:
         plt.suptitle(title, fontsize=16, fontweight='bold')
         plt.tight_layout() 
         if save_fig:
-            plt.savefig('../fig_results/'+title+'.png', dpi=300)
+            plt.savefig('../'+title+'.png', dpi=300)
         else:
             plt.show()
 
