@@ -173,15 +173,13 @@ class ClusteredFactorAnalysis:
                 for w in range(self.group_size):
                     N_diff= N_diff+np.sum(abs(Noise_Variance_dict[w]-Noise_Variance_dict_old[w]))/np.sum(Noise_Variance_dict_old[w])
                 if N_diff<0.00001:
-                    print(f"Reaching Convergence after {k} iterations.")  
+                    # print(f"Reaching Convergence after {k} iterations.")  
                     break   
 
             if self.detect_jumping_samples(g_index):
                 self.jump_count += 1
                 if self.jump_count >= 5:
-                    k = 0
-                    print(f"Jumping between groups detected 5 times. Stopping iteration. Please reset initial parameters.k={k}")
-                    
+                    print(f"Jumping between groups detected 5 times. Stopping iteration. Please reset initial parameters.")
                     break
 
         return ClusteredFAResult(Load_Matrix_dict,Noise_Variance_dict,g_index,Fa_scores,log_like_sum,g_count,self.groups_indexs,k,Variance_infos,Means_dict)                              
