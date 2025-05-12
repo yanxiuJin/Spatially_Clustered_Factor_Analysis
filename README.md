@@ -3,7 +3,7 @@
 ## Overview
 This repository contains the implementation of Spatially Clustered Factor Analysis (SCFA), as proposed by the following paper.
 
-**Jin, Y., Wakayama, T., Jiang, R. and Sugasawa, S. (2024)** [**Clustered Factor Analysis for Multivariate Spatial Data**](http://arxiv.org/abs/2409.07018)
+**Jin, Y., Wakayama, T., Jiang, R. and Sugasawa, S. (2025)** [**Clustered Factor Analysis for Multivariate Spatial Data**](https://doi.org/10.1016/j.spasta.2025.100889)
 
 ## Requirements
 To run this project, you need to have the following Python packages installed:
